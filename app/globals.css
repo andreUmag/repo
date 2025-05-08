@@ -34,6 +34,7 @@ body {
 }
 
 @theme{
+    --color-green-special: #c5ff32;
     --color-green-light: #52A646;
     --color-green-medium: #2C5925;
     --color-green-dark: #132610;

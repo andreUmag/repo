@@ -1,17 +1,24 @@
 import "./page.css";
-import Link from "next/link"
 
 export default function Home() {
   return (
     <main className="pl-2 pr-2 ">
-      <section className="h-svh w-full first-layout bg-black text-white flex justify-center items-center">
-        <div className="flex flex-col justify-center h-full items-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-2 bg-gradient-to-r from-green-medium to-green-light text-transparent bg-clip-text animate-gradient">
+      <section className="h-svh w-full first-layout bg-black text-white flex justify-center items-center relative overflow-hidden">
+        <div className="absolute inset-0 z-0 flex items-center justify-center">
+          <div className="relative w-[100%] max-w-6xl min-w-2xl aspect-video">
+            <video autoPlay loop muted playsInline preload="auto" className="w-full h-full object-contain filter blur-md">
+              <source src="/avatar.webm" type="video/webm" />
+            </video>
+          </div>
+          <div className="absolute inset-0 bg-black/70"></div>
+        </div>
+
+        <div className="flex flex-col justify-center h-full items-center z-10 relative">
+          <h1 className="h1 text-6xl md:text-7xl font-bold mb-2 bg-gradient-to-r from-green-special to-green-light text-transparent bg-clip-text">
             ANDRES MARTINEZ
           </h1>
-          <h2 className="text-xl md:text-2xl mb-4 text-gray-300">Web Developer</h2>
+          <h2 className="h2first text-xl md:text-3xl mb-4 text-gray-300 font-bold">Web Developer</h2>
         </div>
-        
       </section>
 
       <section className="h-svh w-full second-layout">

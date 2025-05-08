@@ -35,8 +35,3 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-<div className="flex flex-wrap justify-center mt-4 w-[250px] rounded-full mb-8">
-          <video autoPlay loop muted playsInline preload="auto" className="video">
-            <source src="/avatar.webm" type="video/webm" />
-          </video>
-        </div>
