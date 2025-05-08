@@ -1,3 +1,5 @@
+"use client";
+
 import "./page.css";
 import Buttons from "@/components/buttons";
 
