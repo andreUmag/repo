@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${montserrat.variable} antialiased`}>
         <div className="fixed top-6 left-6 z-50">
-          <div className="text-[#c5ff32] font-bold text-3xl bg-black/70 rounded-2xl">
+          <div className="AMDEV text-[#c5ff32] font-bold text-3xl bg-black/70 rounded-2xl">
             AMDEV
           </div>
         </div>

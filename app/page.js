@@ -1,8 +1,9 @@
 import "./page.css";
+import Buttons from "@/components/buttons";
 
 export default function Home() {
   return (
-    <main className="pl-2 pr-2 ">
+    <main className="pl-2 pr-2 bg-black">
       <section className="h-svh w-full first-layout bg-black text-white flex justify-center items-center relative overflow-hidden">
         <div className="absolute inset-0 z-0 flex items-center justify-center">
           <div className="relative w-[100%] max-w-6xl min-w-2xl aspect-video">
@@ -18,6 +19,8 @@ export default function Home() {
             ANDRES MARTINEZ
           </h1>
           <h2 className="h2first text-xl md:text-3xl mb-4 text-gray-300 font-bold">Web Developer</h2>
+
+          <Buttons/>
         </div>
       </section>
 
