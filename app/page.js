@@ -2,6 +2,8 @@
 
 import "./page.css";
 import Buttons from "@/components/buttons";
+import { TypingAnimation } from "@/components/magicui/typing-animation";
+
 
 export default function Home() {
   return (
@@ -20,7 +22,7 @@ export default function Home() {
           <h1 className="h1 text-6xl md:text-7xl font-bold mb-2 bg-gradient-to-r from-green-special to-green-light text-transparent bg-clip-text">
             ANDRES MARTINEZ
           </h1>
-          <h2 className="h2first text-xl md:text-3xl mb-4 text-gray-300 font-bold">Web Developer</h2>
+          <h2 className="h2first text-xl md:text-3xl mb-4 text-gray-300 font-bold"><TypingAnimation>Web Developer</TypingAnimation></h2>
 
           <Buttons/>
         </div>
@@ -66,7 +68,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-svh w-full fourth-layout">
+      <section className="h-svh w-full fourth-layout" id="contactame">
         <div className="flex flex-col items-center justify-center h-full">
           <h2 className="text-3xl text-white">Contact</h2>
           <p className="text-lg text-gray-300">

@@ -88,15 +88,15 @@ body {
   overflow: hidden;
 }
 
-@theme{
-    --color-green-special: #c5ff32;
-    --color-green-light: #52A646;
-    --color-green-medium: #2C5925;
-    --color-green-dark: #132610;
-    --color-white-theme: #F2F2F2;
-    --color-black-theme: #0D0D0D;
+@theme {
+  --color-green-special: #A3F7BF;  /* menta suave, vibrante pero ligera */
+  --color-green-light:   #6AD68B;  /* verde pastel moderno */
+  --color-green-medium:  #2BAE66;  /* tono principal moderno, equilibrado */
+  --color-green-dark:    #174C3C;  /* para fondos u opciones secundarias */
+  --color-white-theme:   #F4F4F4;  /* blanco más cálido */
+  --color-black-theme:   #121212;  /* negro profundo, ideal para dark mode */
 
-    --color-section-black: #020002;
+  --color-section-black: #1A1A1A;  /* fondo suave sin ser puro negro */
 }
 
 @media (max-width: 600px) {

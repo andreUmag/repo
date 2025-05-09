@@ -39,12 +39,11 @@ export const AnimatedSubscribeButton = React.forwardRef((
         <motion.button
           ref={ref}
           className={cn(
-            "relative flex h-10 w-fit items-center justify-center overflow-hidden rounded-lg bg-primary px-6 text-primary-foreground",
+            "relative flex h-10 w-fit items-center justify-center overflow-hidden rounded-lg bg-green-dark px-6 text-primary-foreground",
             className
           )}
           onClick={(e) => {
-            // se descarga y se actualiza el estado si se requiere
-            handleDownload(e);
+            e.preventDefault();
             setIsSubscribed(false);
           }}
           initial={{ opacity: 0 }}
@@ -56,18 +55,17 @@ export const AnimatedSubscribeButton = React.forwardRef((
             className="relative flex h-full w-full items-center justify-center font-semibold"
             initial={{ y: -50 }}
             animate={{ y: 0 }}>
-            {changeChild} {/* Use children for subscribed state */}
+            {changeChild}
           </motion.span>
         </motion.button>
       ) : (
         <motion.button
           ref={ref}
           className={cn(
-            "relative flex h-10 w-fit cursor-pointer items-center justify-center rounded-lg border-none bg-primary px-6 text-primary-foreground",
+            "relative flex h-10 w-fit cursor-pointer items-center justify-center rounded-lg border-none bg-green-medium px-6 text-primary-foreground",
             className
           )}
           onClick={(e) => {
-            // se descarga y se actualiza el estado si se requiere
             handleDownload(e);
             setIsSubscribed(true);
           }}
@@ -80,7 +78,7 @@ export const AnimatedSubscribeButton = React.forwardRef((
             className="relative flex items-center justify-center font-semibold"
             initial={{ x: 0 }}
             exit={{ x: 50, transition: { duration: 0.1 } }}>
-            {initialChild} {/* Use children for unsubscribed state */}
+            {initialChild}
           </motion.span>
         </motion.button>
       )}
