@@ -37,4 +37,8 @@ section {
         padding: 10px;
         padding-bottom: 50px;
     }
+    main{
+        padding-top: 20px;
+    }
+
 }
