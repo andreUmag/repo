@@ -24,17 +24,17 @@ export default function Home() {
           </h1>
           <h2 className="h2first text-xl md:text-3xl mb-4 text-gray-300 font-bold"><TypingAnimation>Web Developer</TypingAnimation></h2>
 
-          <Buttons/>
+          <Buttons />
         </div>
       </section>
 
-      <section className="h-svh w-full second-layout">
-        <div className="flex flex-col items-center justify-center h-full">
-          <h2 className="text-3xl text-white">About Me</h2>
-          <p className="text-lg text-gray-300">
-            I am a passionate full stack developer with experience in building
-            web applications using modern technologies.
-          </p>
+      <section className="h-svh w-full second-layout p-28">
+
+        <div className="text-white grid grid-cols-1 md:grid-cols-6 md:grid-rows-4 gap-4 justify-center items-center h-full">
+          <div className="h-full w-full md:col-span-4 md:row-span-2 md:col-start-3 md:row-start-1 grid-section">1</div>
+          <div className="h-full w-full md:col-span-2 md:row-span-2 md:col-start-3 md:row-start-3 grid-section">2</div>
+          <div className="h-full w-full hidden md:col-span-2 md:row-span-4 md:col-start-1 md:row-start-1 grid-section md:block">3</div>
+          <div className="h-full w-full md:col-span-2 md:row-span-2 md:col-start-5 md:row-start-3 grid-section">4</div>
         </div>
 
       </section>

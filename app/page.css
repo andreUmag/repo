@@ -10,8 +10,12 @@ main{
 section {
     scroll-snap-align: start;
     scroll-snap-stop: always;
+}
 
-    
+.grid-section{
+    border-radius: 8px;
+    border-color: #333;
+    border-width: 2px;
 }
 
 @media (max-width: 600px) {
@@ -25,5 +29,10 @@ section {
     .h2first{
         font-size: 1.7rem;
         text-align: center;
+    }
+    .second-layout{
+        padding-top: 80px !important;
+        padding: 10px;
+        padding-bottom: 50px;
     }
 }

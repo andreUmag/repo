@@ -13,7 +13,7 @@ export default function Buttons() {
     };
 
     return (
-        <div className="flex flex-col sm:flex-row gap-3 mt-3">
+        <div className="flex flex-col sm:flex-row gap-3 mt-2">
             <InteractiveHoverButton onClick={handleContactClick}>Contactame</InteractiveHoverButton>
 
             <AnimatedSubscribeButton>
