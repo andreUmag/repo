@@ -4,7 +4,6 @@ import "./page.css";
 import Buttons from "@/components/buttons";
 import { TypingAnimation } from "@/components/magicui/typing-animation";
 
-
 export default function Home() {
   return (
     <main className="pl-2 pr-2 bg-black">
@@ -31,10 +30,18 @@ export default function Home() {
       <section className="h-svh w-full second-layout p-28">
 
         <div className="text-white grid grid-cols-1 md:grid-cols-6 md:grid-rows-4 gap-4 justify-center items-center h-full">
-          <div className="h-full w-full md:col-span-4 md:row-span-2 md:col-start-3 md:row-start-1 grid-section">1</div>
-          <div className="h-full w-full md:col-span-2 md:row-span-2 md:col-start-3 md:row-start-3 grid-section">2</div>
-          <div className="h-full w-full hidden md:col-span-2 md:row-span-4 md:col-start-1 md:row-start-1 grid-section md:block">3</div>
-          <div className="h-full w-full md:col-span-2 md:row-span-2 md:col-start-5 md:row-start-3 grid-section">4</div>
+          <div className=" md:col-span-4 md:row-span-2 md:col-start-3 md:row-start-1 grid-section">
+            1
+          </div>
+          <div className=" md:col-span-2 md:row-span-2 md:col-start-3 md:row-start-3 grid-section">
+            2
+          </div>
+          <div className=" hidden md:col-span-2 md:row-span-4 md:col-start-1 md:row-start-1 grid-section md:block">
+            3
+          </div>
+          <div className=" md:col-span-2 md:row-span-2 md:col-start-5 md:row-start-3 grid-section">
+            4
+          </div>
         </div>
 
       </section>
