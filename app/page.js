@@ -7,7 +7,7 @@ import { TypingAnimation } from "@/components/magicui/typing-animation";
 export default function Home() {
   return (
     <main className="pl-2 pr-2 bg-black">
-      <section className="h-svh w-full first-layout bg-black text-white flex justify-center items-center relative overflow-hidden">
+      <section className="h-svh w-full first-layout bg-black text-white flex justify-center items-center relative overflow-hidden" id="home">
         <div className="absolute inset-0 z-0 flex items-center justify-center">
           <div className="relative w-[100%] max-w-6xl min-w-2xl aspect-video">
             <video autoPlay loop muted playsInline preload="auto" className="w-full h-full object-contain filter blur-md">
@@ -27,26 +27,26 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-svh w-full second-layout p-28">
+      <section className="h-svh w-full second-layout p-28" id="aboutme">
 
         <div className="text-white grid grid-cols-1 md:grid-cols-6 md:grid-rows-4 gap-4 justify-center items-center h-full">
-          <div className=" md:col-span-4 md:row-span-2 md:col-start-3 md:row-start-1 grid-section">
-            1
+          <div className="order-first md:order-none md:col-span-2 md:row-span-4 md:col-start-1 md:row-start-1 grid-section">
+            About Me
           </div>
-          <div className=" md:col-span-2 md:row-span-2 md:col-start-3 md:row-start-3 grid-section">
-            2
+          <div className="md:col-span-4 md:row-span-2 md:col-start-3 md:row-start-1 grid-section">
+            Habilidades
           </div>
-          <div className=" hidden md:col-span-2 md:row-span-4 md:col-start-1 md:row-start-1 grid-section md:block">
-            3
+          <div className="md:col-span-2 md:row-span-2 md:col-start-3 md:row-start-3 grid-section">
+            My experience
           </div>
-          <div className=" md:col-span-2 md:row-span-2 md:col-start-5 md:row-start-3 grid-section">
-            4
+          <div className="md:col-span-2 md:row-span-2 md:col-start-5 md:row-start-3 grid-section">
+            Education
           </div>
         </div>
 
       </section>
 
-      <section className="h-svh w-full third-layout">
+      <section className="h-svh w-full third-layout" id="proyectos">
         <div className="flex flex-col items-center justify-center h-full">
           <h2 className="text-3xl text-white">Projects</h2>
           <p className="text-lg text-gray-300">

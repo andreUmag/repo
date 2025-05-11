@@ -1,9 +1,9 @@
-main{
+main {
     height: 100dvh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-    
+
     scrollbar-color: #333 #121212;
 }
 
@@ -12,32 +12,39 @@ section {
     scroll-snap-stop: always;
 }
 
-.grid-section{
+.grid-section {
+    display: flex;
     border-radius: 8px;
-    position: relative;
     height: 100%;
     width: 100%;
     padding: 8px;
+    background-color: #121212;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 600px) {
     .video {
         width: 150px;
     }
+
     .h1 {
         font-size: 3rem;
         text-align: center;
     }
-    .h2first{
+
+    .h2first {
         font-size: 1.7rem;
         text-align: center;
     }
-    .second-layout{
+
+    .second-layout {
         padding-top: 80px !important;
         padding: 10px;
         padding-bottom: 50px;
     }
-    main{
+
+    main {
         padding-top: 20px;
     }
 
