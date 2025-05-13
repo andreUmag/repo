@@ -27,19 +27,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="h-svh w-full second-layout p-28" id="aboutme">
+      <section className="h-svh w-full second-layout p-30" id="aboutme">
 
-        <div className="text-white grid grid-cols-1 md:grid-cols-6 md:grid-rows-4 gap-4 justify-center items-center h-full">
-          <div className="order-first md:order-none md:col-span-2 md:row-span-4 md:col-start-1 md:row-start-1 grid-section">
+        <div className="text-white grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 gap-4 justify-center items-center h-full pl-15 pr-15">
+          <div className="order-first md:order-none md:row-span-4 md:row-start-1 grid-section">
             About Me
           </div>
-          <div className="md:col-span-4 md:row-span-2 md:col-start-3 md:row-start-1 grid-section">
+          <div className="md:col-span-4 md:row-span-2 md:row-start-1 grid-section">
             Habilidades
           </div>
-          <div className="md:col-span-2 md:row-span-2 md:col-start-3 md:row-start-3 grid-section">
+          <div className="md:col-span-2 md:row-span-2 md:row-start-3 grid-section">
             My experience
           </div>
-          <div className="md:col-span-2 md:row-span-2 md:col-start-5 md:row-start-3 grid-section">
+          <div className="md:col-span-2 md:row-span-2 md:row-start-3 grid-section">
             Education
           </div>
         </div>
