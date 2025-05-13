@@ -1,5 +1,5 @@
 import { Montserrat } from 'next/font/google'
-
+import Navbar from '@/components/Navbar';
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -13,17 +13,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
       <body className={`${montserrat.variable} antialiased`}>
-        <div className="fixed top-6 left-6 z-50">
-          <div className="AMDEV text-[#6AD68B] font-bold text-3xl bg-black/70 rounded-2xl">
-            AMDEV
-          </div>
-        </div>
+        <header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4">
+          <div className="AMDEV text-[#6AD68B] font-bold text-3xl">AMDEV</div>
+          <Navbar></Navbar>
+        </header>
         <div>{children}</div>
       </body>
     </html>
