@@ -110,7 +110,7 @@ export default function SecondSection() {
                             <div className="mt-6 grid grid-cols-2 gap-4">
                                 <div className="bg-white/5 p-4 rounded-lg">
                                     <h4 className="font-medium text-emerald-400">Ubicación</h4>
-                                    <p className="text-sm text-gray-300">Ciudad, País</p>
+                                    <p className="text-sm text-gray-300">Santa Marta, Colombia</p>
                                 </div>
                                 <div className="bg-white/5 p-4 rounded-lg">
                                     <h4 className="font-medium text-emerald-400">Disponibilidad</h4>
