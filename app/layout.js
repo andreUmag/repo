@@ -17,9 +17,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${montserrat.variable} antialiased`}>
-        <header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4">
+        <header className="fixed top-0 w-full z-50 flex justify-start items-center px-6 py-4">
           <div className="AMDEV text-[#6AD68B] font-bold text-3xl">AMDEV</div>
-          <Navbar></Navbar>
         </header>
         <div>{children}</div>
       </body>

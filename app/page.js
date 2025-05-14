@@ -1,51 +1,17 @@
 "use client";
 
 import "./page.css";
-import Buttons from "@/components/buttons";
-import { TypingAnimation } from "@/components/magicui/typing-animation";
+import FirstSection from "@/components/sections/FirstSection";
+import SecondSection from "@/components/sections/SecondSection";
 
 export default function Home() {
   return (
     <main className="pl-2 pr-2 bg-black">
-      <section className="h-svh w-full first-layout bg-black text-white flex justify-center items-center relative overflow-hidden" id="home">
-        <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <div className="relative w-[100%] max-w-6xl min-w-2xl aspect-video">
-            <video autoPlay loop muted playsInline preload="auto" className="w-full h-full object-contain filter blur-md">
-              <source src="/avatar.webm" type="video/webm" />
-            </video>
-          </div>
-          <div className="absolute inset-0 bg-black/70"></div>
-        </div>
+      
+      <FirstSection/>
 
-        <div className="flex flex-col justify-center h-full items-center z-10 relative">
-          <h1 className="h1 text-6xl md:text-7xl font-bold mb-2 bg-gradient-to-r from-green-special to-green-light text-transparent bg-clip-text">
-            ANDRES MARTINEZ
-          </h1>
-          <h2 className="h2first text-xl md:text-3xl mb-4 text-gray-300 font-bold"><TypingAnimation>Web Developer</TypingAnimation></h2>
-
-          <Buttons />
-        </div>
-      </section>
-
-      <section className="h-svh w-full second-layout p-30" id="aboutme">
-
-        <div className="text-white grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 gap-4 justify-center items-center h-full pl-15 pr-15">
-          <div className="order-first md:order-none md:row-span-4 md:row-start-1 grid-section">
-            About Me
-          </div>
-          <div className="md:col-span-4 md:row-span-2 md:row-start-1 grid-section">
-            Habilidades
-          </div>
-          <div className="md:col-span-2 md:row-span-2 md:row-start-3 grid-section">
-            My experience
-          </div>
-          <div className="md:col-span-2 md:row-span-2 md:row-start-3 grid-section">
-            Education
-          </div>
-        </div>
-
-      </section>
-
+      <SecondSection/>
+      
       <section className="h-svh w-full third-layout" id="proyectos">
         <div className="flex flex-col items-center justify-center h-full">
           <h2 className="text-3xl text-white">Projects</h2>

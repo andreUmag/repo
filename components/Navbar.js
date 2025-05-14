@@ -19,7 +19,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="hidden md:block me-5">
+        <nav className="hidden md:flex justify-center items-center me-5 w-full">
             <ul className="flex space-x-8">
                 {Object.keys(sectionMapping).map((label) => (
                     <li key={label}>
